@@ -8,7 +8,7 @@ unsigned long start = millis();
 uint8_t payload[] = { 'R','M','I'};
 
 Tx16Request tx = Tx16Request(0xFFFF, payload, sizeof(payload));//use 16bit receiver xbee address instead of 0xFF
-Tx16Request pingback = Tx16Request(0xFFFF, payload2, sizeof(payload));//0xFF is broadcast to all nearby xbees
+//Tx16Request pingback = Tx16Request(0xFFFF, payload2, sizeof(payload));//0xFF is broadcast to all nearby xbees
 
 TxStatusResponse txStatus = TxStatusResponse();
 
